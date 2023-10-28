@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "/Ou2EsIhRgQtkH+5o/AcndaH2Z5WXRvJ+kMGgRZysM8DOCDrwrqzGmAey12HJ7OkM01scZF7VG6JTcI5GLHa5A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\dilan\\OneDrive\\Masaüstü\\MovieApp\\MovieApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dilan\\.nuget\\packages\\bootstrap\\5.3.2\\bootstrap.5.3.2.nupkg.sha512",
+    "C:\\Users\\dilan\\.nuget\\packages\\de.lkraemer.nemmet\\1.0.2\\de.lkraemer.nemmet.1.0.2.nupkg.sha512",
+    "C:\\Users\\dilan\\.nuget\\packages\\de.lkraemer.tagbuilder\\1.0.2\\de.lkraemer.tagbuilder.1.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

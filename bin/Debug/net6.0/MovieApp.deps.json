@@ -1,0 +1,68 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "MovieApp/1.0.0": {
+        "dependencies": {
+          "bootstrap": "5.3.2",
+          "de.lkraemer.nemmet": "1.0.2"
+        },
+        "runtime": {
+          "MovieApp.dll": {}
+        }
+      },
+      "bootstrap/5.3.2": {},
+      "de.lkraemer.nemmet/1.0.2": {
+        "dependencies": {
+          "de.lkraemer.tagbuilder": "1.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/de.lkraemer.nemmet.dll": {
+            "assemblyVersion": "1.0.2.0",
+            "fileVersion": "1.0.2.0"
+          }
+        }
+      },
+      "de.lkraemer.tagbuilder/1.0.2": {
+        "runtime": {
+          "lib/netstandard2.0/de.lkraemer.tagbuilder.dll": {
+            "assemblyVersion": "1.0.2.0",
+            "fileVersion": "1.0.2.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MovieApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "bootstrap/5.3.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-m0/GEaLwE35B8P1xScFhwAsQi5o6kWPzOVPdGkoFwv+5YjmbgXFPQai71N5APwRCU52ZO4vHYWJ5DYSqKKgivw==",
+      "path": "bootstrap/5.3.2",
+      "hashPath": "bootstrap.5.3.2.nupkg.sha512"
+    },
+    "de.lkraemer.nemmet/1.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-sKLqzazEX4hC2vymyB+rfxohEsXa4+m2HmnRdp+IN39O/y2NIlFut1s6aoYT4SafK7/Ku6AwNP1XjqWH1bhYyg==",
+      "path": "de.lkraemer.nemmet/1.0.2",
+      "hashPath": "de.lkraemer.nemmet.1.0.2.nupkg.sha512"
+    },
+    "de.lkraemer.tagbuilder/1.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pFBDZcsW0S6d9z+tyqFn6BbIRHNloLH5U8HbBNmdhNTgEfxHV566MGmTavVXUTgTxdliADn3iEr3EJN8XX9o9A==",
+      "path": "de.lkraemer.tagbuilder/1.0.2",
+      "hashPath": "de.lkraemer.tagbuilder.1.0.2.nupkg.sha512"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+﻿@model Movie
+<div class="row">
+    <div class="col-md-2 mb-4">
+        @*@Html.Partial("_Menu",Model.Categories)*@
+        @await Component.InvokeAsync("CategoryMenu")
+    </div>
+    <div class="col-md-10">
+        <div class="card mx-4 mb-4 " >
+            <div class="card-body">
+                <div class="row ">
+                    <div class="col-md-4">
+                        
+                        <img src="~/img/@Model.ImageUrl" class="card-img">
+                    </div>
+
+                    <div class="col-md-8">
+                        <h5 class="card-title">
+                            <a asp-action="Details" asp-controller="Home" asp-route-id="@Model.Id">@Model.Name</a>
+                        </h5>
+                        <p class="card-text">
+                            @Html.Raw(Model.Detail)
+                        </p>
+
+                        <a href="#" class="btn btn-primary mb-3">Watch Movie</a>
+                        <p class="card-text mb-1">
+                            <small class="text-body-secondary">Last updated 5 min ago</small>
+                        </p>
+
+                    </div>
+                    
+
+
+                </div>
+
+            </div>            
+                
+        </div>
+    </div>
+</div>
