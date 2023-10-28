@@ -5,7 +5,14 @@
         @await Component.InvokeAsync("CategoryMenu")
     </div>
     <div class="col-md-10">
-        @Html.Partial("_Movies" , Model)
+        @if (Model.Count()==0)
+        {
+            @Html.Partial("_Nofilm" )
+        }
+        else
+        {
+            @Html.Partial("_Movies" , Model)
+        }
         
     </div>
 </div>
