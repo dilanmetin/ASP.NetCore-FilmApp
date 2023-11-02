@@ -19,19 +19,19 @@ namespace MovieApp.Controllers
         }
 
         [HttpGet]
-        public IActionResult Index(int? id)
+        public IActionResult Index(int? id, string q)
         {
             var movies = MovieRepository.Movies;
             if(id != null)
             {   
                 movies= movies.Where(i=>i.CategoryId == id).ToList();
             }
-            
-
+            if (!string.IsNullOrEmpty(q))
+            {
+                movies = movies.Where(a => a.Name.ToLower().Contains(q.ToLower())).ToList();
+            }
             return View(movies);
-            
-            
-        }
+         }
         public IActionResult Contact()
         {
             return View();
