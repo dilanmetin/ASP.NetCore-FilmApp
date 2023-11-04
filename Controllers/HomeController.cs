@@ -32,6 +32,22 @@ namespace MovieApp.Controllers
             }
             return View(movies);
          }
+         public IActionResult Create()
+        {
+            ViewBag.Categories = new SelectList(CategoryRepository.Categories, "Id", "Name");
+            return View();
+        }
+
+        [HttpPost]
+         public IActionResult Create(Movie _movie)
+        {
+            if (ModelState.IsValid)
+            {
+                MovieRepository.AddMovie(_movie);
+                return RedirectToAction("index");
+            }
+            return View(_movie);
+        }
         public IActionResult Contact()
         {
             return View();
