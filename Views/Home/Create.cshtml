@@ -1,0 +1,35 @@
+﻿@model Movie
+
+<div class="container col-md-5 mx-4 my-4 ">
+    <br />
+    <form method="POST">
+        <div class="form-group mt-2">
+            <label for="Name">Movie Name</label>
+            <input asp-for="Name"  class="form-control" placeholder="Movie Name">
+        </div>
+        
+        <div class="form-group mt-2">
+            <label for="Description">Description</label>
+            <textarea asp-for="Description" class="form-control" placeholder="Description"></textarea>
+        </div>
+        <div class="form-group mt-2">
+            <label for="Description">Details</label>
+            <textarea asp-for="Detail" class="form-control" placeholder="Details"></textarea>
+        </div>
+       
+        
+        <div class="form-group mt-2">
+            <label for="ImageUrl">Image</label>
+            <input asp-for="ImageUrl" class="form-control" placeholder="Ex: 1.png">
+        </div>
+        <div class="form-group mt-2">
+            <label for="CategoryId">Category</label>
+            <select asp-for="CategoryId" asp-items="@ViewBag.Categories" class="form-control">
+                <option selected disabled>Select</option>
+            </select>
+        </div>
+        <button type="submit" class="btn mt-2 btn-primary">Add Movie</button>
+        <br />
+        <br />
+    </form>
+</div>
