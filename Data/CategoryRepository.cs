@@ -10,12 +10,12 @@ namespace MovieApp.Data
         {
             _categories = new List<Category>()
             {
-                new Category { Id = 1, Name="Komedi"},
-                new Category { Id = 2, Name="Romantik"},
-                new Category { Id = 3, Name="Animasyon"},
-                new Category { Id = 4, Name="Fantastik"},
-                new Category { Id = 5, Name="Korku"},
-                new Category { Id = 6, Name="Bilim Kurgu"},
+                new Category { Id = 1, Name="Comedy"},
+                new Category { Id = 2, Name="Romance"},
+                new Category { Id = 3, Name="Animation"},
+                new Category { Id = 4, Name="Fantasy"},
+                new Category { Id = 5, Name="Horror"},
+                new Category { Id = 6, Name="Science-Fiction"},
 
             };
         }
